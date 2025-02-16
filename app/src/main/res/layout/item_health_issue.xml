@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Health Issue Description -->
+        <TextView
+            android:id="@+id/tv_health_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health Issue: [Dynamic Health Issue Description Here]"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:padding="10dp" />
+
+        <!-- Room Number -->
+        <TextView
+            android:id="@+id/tv_room_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Number: [Dynamic Room Number Here]"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Registration Number -->
+        <TextView
+            android:id="@+id/tv_reg_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Number: [Dynamic Registration Number Here]"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="4dp" />
+
+        <!-- Student Name -->
+        <TextView
+            android:id="@+id/tv_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Name: [Dynamic Student Name Here]"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

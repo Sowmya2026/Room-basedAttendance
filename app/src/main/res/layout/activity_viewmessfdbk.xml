@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title for Mess Feedback Section -->
+    <TextView
+        android:id="@+id/tv_mess_feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mess Feedback"
+        android:textSize="24sp"
+        android:padding="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/soft_yellow"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView to Display Mess Feedback -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_mess_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="649dp" />
+</LinearLayout>

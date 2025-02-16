@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title for Hostel Events Section -->
+    <TextView
+        android:id="@+id/tv_hostel_events_title"
+        android:layout_width="278dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Upcoming Hostel Events"
+        android:textColor="@color/soft_green"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <!-- RecyclerView for displaying events -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_hostel_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>

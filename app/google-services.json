@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "821351255601",
+    "firebase_url": "https://vit-mess-f62be-default-rtdb.firebaseio.com",
+    "project_id": "vit-mess-f62be",
+    "storage_bucket": "vit-mess-f62be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821351255601:android:449373440da429fd734f10",
+        "android_client_info": {
+          "package_name": "com.example.roombasedattendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-1tQc8x_MP3SJmil_DhfCENNbxfkbJI4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title for Health Issues Section -->
+    <TextView
+        android:id="@+id/tv_health_issues_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Health Issues"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:padding="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Health Issue Description (TextInputLayout with TextInputEditText) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_health_issue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_health_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe your health problem"
+            android:minLines="3"
+            android:maxLines="4"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Room Number Input (TextInputLayout with TextInputEditText) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_health_room_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_health_room_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room Number"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Registration Number Input (TextInputLayout with TextInputEditText) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_health_reg_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_health_reg_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Number"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Student Name Input (TextInputLayout with TextInputEditText) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_health_student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_health_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Submit Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/soft_orange"
+        android:onClick="submit_issue1"
+        android:text="Submit Issue"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Progress Indicator (Initially hidden) -->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progress_bar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Student Registration"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="20dp" />
+
+        <!-- Room Number Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/roomNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Student Name Input -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/studentNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Room Type Dropdown -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Type"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/roomType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/room_type_array" />
+
+        <!-- Bed Count Dropdown -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bed Count"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/bedCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/bed_count_array" />
+
+        <!-- Student Image and Name (Single Student) -->
+        <LinearLayout
+            android:id="@+id/studentImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <!-- Student Image -->
+            <ImageView
+                android:id="@+id/studentImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@android:drawable/ic_menu_camera" />
+
+            <!-- Student Name Label -->
+            <TextView
+                android:id="@+id/studentName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Name"
+                android:gravity="center"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+
+        <!-- Register Face Button -->
+        <Button
+            android:id="@+id/registerFaceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capture Face for Registration"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

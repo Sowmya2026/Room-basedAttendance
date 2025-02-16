@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Plug body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M16,2C16.55,2 17,2.45 17,3V7C17,7.55 16.55,8 16,8H14V6C14,5.45 14.45,5 15,5H16V2ZM16,9C16.55,9 17,9.45 17,10V14C17,14.55 16.55,15 16,15H14V13C14,12.45 14.45,12 15,12H16V9ZM7,3C7,2.45 7.45,2 8,2H10V5H8C7.45,5 7,5.45 7,6V9H5V6C5,5.45 5.45,5 6,5H7V3ZM7,10C7,9.45 7.45,9 8,9H10V12H8C7.45,12 7,12.45 7,13V16H5V13C5,12.45 5.45,12 6,12H7V10ZM12,18C12,17.45 12.45,17 13,17H15C15.55,17 16,17.45 16,18V20C16,20.55 15.55,21 15,21H13C12.45,21 12,20.55 12,20V18ZM13,19H15V18H13V19Z" />
+    <!-- Wire -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,20C12,20 10,21 8,21C6,21 4,20 4,19C4,18 6,17 8,17C10,17 12,18 12,18V20ZM12,14V17H5V14H12Z" />
+</vector>

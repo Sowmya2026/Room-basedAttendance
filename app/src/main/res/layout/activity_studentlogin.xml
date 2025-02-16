@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context=".StudentloginActivity">
+
+    <!-- Student Login Title -->
+    <TextView
+        android:id="@+id/tv_student_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="30dp"
+        android:text="Student Login"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Student ID Input using TextInputLayout and TextInputEditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Register Number"
+            android:inputType="text"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Student ID input field" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Student Password Input using TextInputLayout and TextInputEditText -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="true"
+        app:endIconMode="password_toggle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_student_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Password input field" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ProgressBar (hidden by default) -->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:indicatorSize="36dp"
+        app:trackThickness="4dp"
+        app:indicatorColor="@color/soft_blue"
+        android:layout_centerInParent="true" />
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginstudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/soft_purple"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="21dp"
+        app:icon="@drawable/ic_login"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp" />
+
+    <!-- Sign Up Link -->
+    <TextView
+        android:id="@+id/tv_student_signup_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a member? Signup here"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onSignupClick" />
+</LinearLayout>

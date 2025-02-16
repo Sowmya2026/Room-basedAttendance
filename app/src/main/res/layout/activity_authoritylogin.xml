@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context=".AuthorityloginActivity">
+
+    <!-- Title for Hostel Authority Login -->
+    <TextView
+        android:id="@+id/tv_hostel_authority_login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:text="Hostel Authority Login"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Hostel Authority ID Input using Material TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_authority_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="true"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxStrokeColor="@android:color/darker_gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_authority_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Authority ID"
+            android:inputType="text"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Hostel Authority ID input field" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Password Input using Material TextInputLayout -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_authority_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:hintEnabled="true"
+        app:endIconMode="password_toggle"
+        app:boxBackgroundMode="filled"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxStrokeColor="@android:color/darker_gray">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_authority_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:importantForAccessibility="yes"
+            android:contentDescription="Password input field" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- ProgressBar (hidden by default) -->
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:indicatorSize="36dp"
+        app:trackThickness="4dp"
+        app:indicatorColor="@color/soft_blue"
+        android:layout_centerInParent="true" />
+
+    <!-- Login Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_authority_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/soft_purple"
+        android:padding="10dp"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:textSize="21sp"
+        app:icon="@drawable/ic_login"
+        app:iconGravity="textStart"
+        app:iconPadding="8dp"
+        android:onClick="hostelAuthorityLogin" />
+
+</LinearLayout>

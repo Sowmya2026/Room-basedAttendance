@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title for Mess Feedback Section -->
+    <TextView
+        android:id="@+id/tv_mess_feedback_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mess Feedback"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- TextInputLayout for Event Date with Date Picker -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="  Event Date (DD/MM/YYYY)"
+            android:focusable="false"
+            android:inputType="none"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:onClick="showDatePickerDialog"
+            android:drawableLeft="@drawable/ic_calendar" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- EditText for entering feedback -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_mess_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your feedback"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:maxLines="6"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Submit Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_schedule_event"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="submit_feedback"
+        android:text="Submit Feedback"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- Progress Indicator -->
+    <ProgressBar
+        android:id="@+id/progress_bar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"/>
+</LinearLayout>

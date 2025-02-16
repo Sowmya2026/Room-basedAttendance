@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Roombasedattendance</string>
+<string-array name="room_type_array">
+    <item>AC</item>
+    <item>Non-AC</item>
+</string-array>
+<string-array name="bed_count_array">
+    <item>2 Bed</item>
+    <item>3 Bed</item>
+    <item>4 Bed</item>
+</string-array>
+</resources>

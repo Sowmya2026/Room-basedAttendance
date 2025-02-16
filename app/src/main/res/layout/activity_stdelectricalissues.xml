@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title for Electrical Issues Section -->
+    <TextView
+        android:id="@+id/tv_electrical_issues_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Report Electrical Issues"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Issue Description -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_electrical_issue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe the issue (max 50 words)"
+            android:maxLength="50"
+            android:minLines="3"
+            android:maxLines="4"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Room Number Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_electrical_room_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Room Number"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Registration Number Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_electrical_reg_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Registration Number"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Student Name Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_electrical_student_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Start Time Selection -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Time (HH:MM)"
+            android:focusable="false"
+            android:inputType="none"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:onClick="showStartTimePicker"
+            android:drawableLeft="@drawable/ic_clock"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- End Time Selection -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End Time (HH:MM)"
+            android:focusable="false"
+            android:inputType="none"
+            android:padding="12dp"
+            android:background="@drawable/edit_text_bg"
+            android:onClick="showEndTimePicker"
+            android:drawableLeft="@drawable/ic_clock"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_schedule_event"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/soft_orange"
+        android:onClick="submit_issue"
+        android:text="Submit Issue"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+    <!-- Progress Indicator -->
+    <ProgressBar
+        android:id="@+id/progress_bar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:indeterminate="true"/>
+</LinearLayout>
